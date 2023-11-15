@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="WS15Inheritance">
+  <ClassDiagramComponents>
+    <Class name="Bunny" package="ec.edu.espe.farm.model" visibility="public" xPosition="48.0" yPosition="352.0">
+      <Fields>
+        <Field name="holesDigged" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="holesDigged"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bredd"/>
+          <Argument type="Date" name="bornOn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public">
+          <Argument type="Meat" name="meat"/>
+        </Method>
+        <Method name="feed" returnType="boolean" visibility="public">
+          <Argument type="Food" name="food"/>
+        </Method>
+        <Method name="digAHole" returnType="void" visibility="public"/>
+        <Method name="getHolesDigged" returnType="int" visibility="public"/>
+        <Method name="setHolesDigged" returnType="void" visibility="public">
+          <Argument type="int" name="holesDigged"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Chicken" package="ec.edu.espe.farm.model" visibility="public" xPosition="264.0" yPosition="20.0">
+      <Fields>
+        <Field name="isMolting" type="boolean" visibility="private"/>
+        <Field name="laidEggs" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isMolting"/>
+          <Argument type="int" name="laidEggs"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bredd"/>
+          <Argument type="Date" name="bornOn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public">
+          <Argument type="Meat" name="meat"/>
+        </Method>
+        <Method name="feed" returnType="boolean" visibility="public">
+          <Argument type="Food" name="food"/>
+        </Method>
+        <Method name="layAnEgg" returnType="void" visibility="public"/>
+        <Method name="isIsMolting" returnType="boolean" visibility="public"/>
+        <Method name="setIsMolting" returnType="void" visibility="public">
+          <Argument type="boolean" name="isMolting"/>
+        </Method>
+        <Method name="getLaidEggs" returnType="int" visibility="public"/>
+        <Method name="setLaidEggs" returnType="void" visibility="public">
+          <Argument type="int" name="laidEggs"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cow" package="ec.edu.espe.farm.model" visibility="public" xPosition="1170.0" yPosition="-35.0">
+      <Fields>
+        <Field name="isProducingMilk" type="boolean" visibility="private"/>
+        <Field name="milk" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isProducingMilk"/>
+          <Argument type="int" name="milk"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bredd"/>
+          <Argument type="Date" name="bornOn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public">
+          <Argument type="Meat" name="meat"/>
+        </Method>
+        <Method name="feed" returnType="boolean" visibility="public">
+          <Argument type="Food" name="food"/>
+        </Method>
+        <Method name="isIsProducingMilk" returnType="boolean" visibility="public"/>
+        <Method name="setIsProducingMilk" returnType="void" visibility="public">
+          <Argument type="boolean" name="isProducingMilk"/>
+        </Method>
+        <Method name="getMilk" returnType="int" visibility="public"/>
+        <Method name="setMilk" returnType="void" visibility="public">
+          <Argument type="int" name="milk"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FarmAnimal" package="ec.edu.espe.farm.model" visibility="public" isAbstract="true" xPosition="1286.0" yPosition="428.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="bredd" type="String" visibility="private"/>
+        <Field name="bornOn" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bredd"/>
+          <Argument type="Date" name="bornOn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="produce" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="feed" returnType="boolean" visibility="public" isAbstract="true">
+          <Argument type="Food" name="food"/>
+        </Method>
+        <Method name="getAgeInMonths" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getBredd" returnType="String" visibility="public"/>
+        <Method name="setBredd" returnType="void" visibility="public">
+          <Argument type="String" name="bredd"/>
+        </Method>
+        <Method name="getBornOn" returnType="Date" visibility="public"/>
+        <Method name="setBornOn" returnType="void" visibility="public">
+          <Argument type="Date" name="bornOn"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Food" package="ec.edu.espe.farm.model" visibility="public" xPosition="781.0" yPosition="622.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Meat" package="ec.edu.espe.farm.model" visibility="public" xPosition="640.0" yPosition="1046.0">
+      <Fields>
+        <Field name="pounds" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getPounds" returnType="int" visibility="public"/>
+        <Method name="setPounds" returnType="void" visibility="public">
+          <Argument type="int" name="pounds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Pig" package="ec.edu.espe.farm.model" visibility="public" xPosition="21.0" yPosition="905.0">
+      <Fields>
+        <Field name="holesDigged" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="holesDigged"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bredd"/>
+          <Argument type="Date" name="bornOn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public">
+          <Argument type="Meat" name="meat"/>
+        </Method>
+        <Method name="feed" returnType="boolean" visibility="public">
+          <Argument type="Food" name="food"/>
+        </Method>
+        <Method name="digAHole" returnType="void" visibility="public"/>
+        <Method name="getHolesDigged" returnType="int" visibility="public"/>
+        <Method name="setHolesDigged" returnType="void" visibility="public">
+          <Argument type="int" name="holesDigged"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Sheep" package="ec.edu.espe.farm.model" visibility="public" xPosition="1113.0" yPosition="1018.0">
+      <Fields>
+        <Field name="lastSheering" type="Date" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Date" name="lastSheering"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="bredd"/>
+          <Argument type="Date" name="bornOn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="undergrowthControl" returnType="int" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public"/>
+        <Method name="produce" returnType="int" visibility="public">
+          <Argument type="Meat" name="meat"/>
+        </Method>
+        <Method name="feed" returnType="boolean" visibility="public">
+          <Argument type="Food" name="food"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FarmSystem" package="ec.edu.espe.farm.view" visibility="public" xPosition="1732.0" yPosition="972.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="printTYpe" returnType="void" visibility="private" isStatic="true">
+          <Argument type="FarmAnimal" name="farmAnimal"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Digger" package="ec.edu.espe.farm.model" visibility="public" xPosition="392.0" yPosition="653.0">
+      <Methods>
+        <Method name="digAHole" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+    <Interface name="IBird" package="ec.edu.espe.farm.model" visibility="public" xPosition="817.0" yPosition="66.0">
+      <Methods>
+        <Method name="layAnEgg" returnType="void" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="ec.edu.espe.farm.model.Sheep" target="ec.edu.espe.farm.model.Food" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.farm.model.Chicken" target="ec.edu.espe.farm.model.Meat" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.farm.model.Cow" target="ec.edu.espe.farm.model.FarmAnimal"/>
+    <UseRelation source="ec.edu.espe.farm.model.Bunny" target="ec.edu.espe.farm.model.Food" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.farm.model.Sheep" target="ec.edu.espe.farm.model.Meat" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.farm.model.Bunny" target="ec.edu.espe.farm.model.FarmAnimal"/>
+    <IsRelation name="is" source="ec.edu.espe.farm.model.Sheep" target="ec.edu.espe.farm.model.FarmAnimal"/>
+    <UseRelation source="ec.edu.espe.farm.model.Bunny" target="ec.edu.espe.farm.model.Meat" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.farm.view.FarmSystem" target="ec.edu.espe.farm.model.FarmAnimal" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.farm.model.Chicken" target="ec.edu.espe.farm.model.FarmAnimal"/>
+    <UseRelation source="ec.edu.espe.farm.model.Chicken" target="ec.edu.espe.farm.model.Food" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.edu.espe.farm.model.Pig" target="ec.edu.espe.farm.model.Digger"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.edu.espe.farm.model.Bunny" target="ec.edu.espe.farm.model.Digger"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.edu.espe.farm.model.Chicken" target="ec.edu.espe.farm.model.IBird"/>
+    <UseRelation source="ec.edu.espe.farm.model.Pig" target="ec.edu.espe.farm.model.Food" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.farm.model.FarmAnimal" target="ec.edu.espe.farm.model.Food" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.farm.model.Pig" target="ec.edu.espe.farm.model.FarmAnimal"/>
+    <UseRelation source="ec.edu.espe.farm.model.Cow" target="ec.edu.espe.farm.model.Meat" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.farm.model.Cow" target="ec.edu.espe.farm.model.Food" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.farm.model.Pig" target="ec.edu.espe.farm.model.Meat" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
