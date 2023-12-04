@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1701033018 source:d:\uninversidad\tercersemestre\estructura\sobrecarga de funciones\maximos.cpp
+	"maximos.h"
+	<string>
+
+1701033053 d:\uninversidad\tercersemestre\estructura\sobrecarga de funciones\maximos.h
+	<string>
+
+1701033018 source:d:\uninversidad\tercersemestre\estructura\sobrecarga de funciones\main.cpp
+	<iostream>
+	<string>
+	"maximos.h"
+	"maximos.cpp"
+
+1701033018 d:\uninversidad\tercersemestre\estructura\sobrecarga de funciones\maximos.cpp
+	"maximos.h"
+	<string>
+
