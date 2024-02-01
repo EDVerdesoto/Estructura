@@ -29,17 +29,17 @@
 	<string.h>
 	<cstring>
 
-1701441056 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\listasimple.cpp
+1701709399 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\listasimple.cpp
 	<iostream>
 	"ListaSimple.h"
 	"Nodo.h"
 
-1701639839 d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\listasimple.h
+1701709310 d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\listasimple.h
 	"Nodo.h"
 
 1701441056 d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\nodo.h
 
-1701646833 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\main.cpp
+1701709275 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\listas\listas\main.cpp
 	<iostream>
 	"Nodo.h"
 	"ListaSimple.h"

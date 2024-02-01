@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1703034475 source:f:\uninversidad\tercersemestre\estructura\codigos y demas\pilas\nodo.cpp
+	"Nodo.h"
+
+1703034447 f:\uninversidad\tercersemestre\estructura\codigos y demas\pilas\nodo.h
+
+1703034379 source:f:\uninversidad\tercersemestre\estructura\codigos y demas\pilas\main.cpp
+	<iostream>
+	"validaciones.h"
+	"Pila.h"
+
+1702914654 f:\uninversidad\tercersemestre\estructura\codigos y demas\pilas\validaciones.h
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<cstring>
+
+1703036604 f:\uninversidad\tercersemestre\estructura\codigos y demas\pilas\pila.h
+	<iostream>
+	"Nodo.h"
+
+1703034296 source:f:\uninversidad\tercersemestre\estructura\codigos y demas\pilas\pila.cpp
+	"Pila.h"
+

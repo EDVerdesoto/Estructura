@@ -13,6 +13,8 @@ class ListaSimple
         void buscar(int);
         void eliminarPorCola();
         void eliminarPorCabeza();
+        int sumaDigitosPares();
+        int sumaDigitosPares(Nodo*);
         ListaSimple();
         ~ListaSimple();
     protected:

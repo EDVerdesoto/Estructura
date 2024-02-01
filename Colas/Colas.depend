@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1702484956 source:c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\main.cpp
+	<iostream>
+	"validaciones.h"
+	"Cola.h"
+
+1702436759 source:c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\nodo.cpp
+	"Nodo.h"
+
+1702436793 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\nodo.h
+
+1701660548 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\validaciones.h
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<cstring>
+
+1702484677 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\cola.h
+	<iostream>
+	"Nodo.h"
+
+1702485665 source:c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\cola.cpp
+	"Cola.h"
+
+1702484669 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\colas\algoritmo.h
+	"Cola.h"
+
+1702617266 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\colas\main.cpp
+	<iostream>
+	"validaciones.h"
+	"Cola.h"
+
+1701660548 d:\uninversidad\tercersemestre\estructura\codigos y demas\colas\validaciones.h
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<cstring>
+
+1702617266 d:\uninversidad\tercersemestre\estructura\codigos y demas\colas\cola.h
+	<iostream>
+	"Nodo.h"
+
+1702436793 d:\uninversidad\tercersemestre\estructura\codigos y demas\colas\nodo.h
+
+1702436759 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\colas\nodo.cpp
+	"Nodo.h"
+
+1702617680 source:d:\uninversidad\tercersemestre\estructura\codigos y demas\colas\cola.cpp
+	"Cola.h"
+

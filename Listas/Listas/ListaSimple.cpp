@@ -23,14 +23,13 @@ void ListaSimple::insertar_cola(int valor){
     Nodo* nodo_nuevo = new Nodo(valor, nullptr);
     if(cabeza == nullptr){
         cabeza = nodo_nuevo;
-        return;
     }
     else{
-        Nodo* cola = cabeza;
-        while(cola!=nullptr){
-            cola = cola->get_siguiente();
+        Nodo* aux = cabeza;
+        while(aux->get_siguiente()!=nullptr){
+            aux = aux->get_siguiente();
         }
-        cola = nodo_nuevo;
+        aux->set_siguiente(nodo_nuevo);
     }
 }
 
@@ -40,7 +39,7 @@ void ListaSimple::imprimir(){
     while(!(aux==nullptr)){
         printf("%d", aux->get_valor());
         aux = aux->get_siguiente();
-        printf("\t", 4);
+        printf("\t");
     }
     printf("\n");
 }
@@ -49,61 +48,100 @@ void ListaSimple::imprimir(){
 void ListaSimple::imprimirPorCola(){
     Nodo* it = cabeza;
     ListaSimple reversa;
+    printf("\n");
     while(it!=NULL){
         reversa.insertar_cabeza(it->get_valor());
         it = it->get_siguiente();
     }
     it = reversa.cabeza;
     while(it!=NULL){
-        printf("%d ", it->get_valor());
+        printf("%d", it->get_valor());
         it = it->get_siguiente();
+        printf("\t");
     }
+    printf("\n");
 }
 
 void ListaSimple::buscar(int valor){
     Nodo* aux = cabeza;
+    printf("\n");
     int valorP = 0;
     if(cabeza == nullptr){
         printf("no hay elementos en la lista");
     }
     else{
-        scanf("Ingrese el valor a buscar %d", &valor);
         while(aux != nullptr){
             valorP=aux->get_valor();
             if (valorP==valor){
-                printf("Encontrado en %d", &aux);
+                printf("Encontrado en %p \n", aux);
+                break;
             }
             else{
-                if(aux->get_siguiente()==NULL){
-                    printf("No existe el valor");
+                if(aux->get_siguiente()==nullptr){
+                    printf("no existe el valor\n");
                 }
-                aux = aux->get_siguiente();
+            aux = aux->get_siguiente();
             }
         }
     }
 }
 
+
 void ListaSimple::eliminarPorCabeza(){
-    Nodo* aux = cabeza;
-    int valorP = 0;
+    printf("\n");
     if(cabeza == nullptr){
         printf("no hay elementos en la lista");
     }
     else{
-        cabeza->get_valor()=NULL;
+        cabeza=cabeza->get_siguiente();
     }
 }
 
 void ListaSimple::eliminarPorCola(){
+    printf("\n");
     Nodo* aux = cabeza;
-    int valorP = 0;
     if(cabeza == nullptr){
         printf("no hay elementos en la lista");
     }
     else{
-
+        while(aux->get_siguiente()->get_siguiente()!=nullptr){
+            aux = aux->get_siguiente();
+            }
+        aux->set_siguiente(nullptr);
     }
 }
+
+int ListaSimple::sumaDigitosPares(Nodo* nodo) {
+    if (nodo == nullptr) {
+        printf("No hay elementos en la lista");
+        return 0;
+    } else {
+        while(nodo!=nullptr){
+                int num = nodo->get_valor();
+            while (num>10){
+                if (esPosicionPar) {
+
+                    int suma = 0;
+                    while (num > 0) {
+                        suma += num % 10;
+                        num /= 10;
+                    }
+                    nodo->set_valor(suma);
+                    return suma;
+                    nodo->get_siguiente();
+                    nodo->get_siguiente();
+                } else {
+                    return sumaDigitosPares(nodo->get_siguiente());
+                }
+            }
+        }
+    }
+}
+
+int ListaSimple::sumaDigitosPares() {
+    return sumaDigitosPares(cabeza, true);
+}
+
 ListaSimple::~ListaSimple()
 {
     //dtor

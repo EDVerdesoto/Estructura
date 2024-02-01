@@ -32,7 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="../validaciones.h" />
+		<Unit filename="../../../../../../validaciones.h" />
 		<Unit filename="ListaSimple.cpp" />
 		<Unit filename="ListaSimple.h" />
 		<Unit filename="Nodo.cpp" />

@@ -17,6 +17,7 @@ int main()
         printf("\n5. Buscar en lista");
         printf("\n6. Eliminar por cabeza");
         printf("\n7. Eliminar por cola");
+        printf("\n8. Suma recursiva");
         printf("\n0. Salir");
         opcion = ingresar_enteros("\nIngrese una opcion del menu");
         switch(opcion){
@@ -47,15 +48,15 @@ int main()
                 system("pause");
                 break;
             case 6:
-                dato = ingresar_enteros("\nIngresar un entero como dato del nodo a buscar");
-                printf("\n");
-                lista.buscar(dato);
+                lista.eliminarPorCabeza();
                 system("pause");
                 break;
             case 7:
-                dato = ingresar_enteros("\nIngresar un entero como dato del nodo a buscar");
-                printf("\n");
-                lista.buscar(dato);
+                lista.eliminarPorCola();
+                system("pause");
+                break;
+            case 8:
+                lista.sumaDigitosPares();
                 system("pause");
                 break;
         }

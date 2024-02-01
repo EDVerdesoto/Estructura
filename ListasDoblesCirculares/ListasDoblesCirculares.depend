@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1702268098 source:c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\listasdoblescirculares\main.cpp
+	<iostream>
+	"Lista_Doble_Circular.h"
+	"validaciones.h"
+
+1702254309 source:c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\listasdoblescirculares\nodo.cpp
+	"Nodo.h"
+
+1702254209 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\listasdoblescirculares\nodo.h
+
+1702268595 source:c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\listasdoblescirculares\lista_doble_circular.cpp
+	<iostream>
+	"Lista_Doble_Circular.h"
+
+1702266471 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\listasdoblescirculares\lista_doble_circular.h
+	"Nodo.h"
+	"Lista_Doble_Circular.h"
+
+1701843076 c:\users\darÍo benavides\desktop\profesional\lenguajes\c++(both)\listasdoblescirculares\validaciones.h
+	<iostream>
+	<stdlib.h>
+	<conio.h>
+	<stdio.h>
+	<string.h>
+	<cstring>
+

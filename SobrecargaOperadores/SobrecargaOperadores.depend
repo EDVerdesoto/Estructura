@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1701058144 source:d:\uninversidad\tercersemestre\estructura\sobrecargaoperadores\main.cpp
+	<cstdio>
+	"OpSobrecarga.h"
+	"OpSobrecarga.cpp"
+
+1701058244 source:d:\uninversidad\tercersemestre\estructura\sobrecargaoperadores\opsobrecarga.cpp
+	"OpSobrecarga.h"
+
+1701057433 d:\uninversidad\tercersemestre\estructura\sobrecargaoperadores\opsobrecarga.h
+	<cstdio>
+
+1701057760 d:\uninversidad\tercersemestre\estructura\sobrecargaoperadores\opsobrecarga.cpp
+	"OpSobrecarga.h"
+
